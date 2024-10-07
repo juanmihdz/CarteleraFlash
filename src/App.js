@@ -1,6 +1,6 @@
-import { Datepicker } from "flowbite-react";
+import MainRoutes from "./routes/MainRoutes";
 
 export default function App() {
-  return <Datepicker showTodayButton={false} showClearButton={false} />;
+  return <MainRoutes></MainRoutes>;
   
 }
