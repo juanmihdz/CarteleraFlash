@@ -44,7 +44,7 @@ export default function Header() {
           </div>
         </section>
       </nav>
-      <section className='lg:w-1/2 pl-8 flex-col items-center justify-center flex gap-4  mb-10'>
+      <section className='lg:w-1/2 pl-8 flex-col items-center justify-center flex gap-4 mb-10 max-w-7xl'>
         <div className='w-full'>
           <h2 className='text-6xl font-semibold p-4'>
             Encuentra la película ideal,
