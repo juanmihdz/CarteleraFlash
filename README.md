@@ -67,3 +67,8 @@ Requisitos funcionales:
    - **Descripción**: El sistema debe responder rápidamente a las búsquedas y mostrar los resultados sin demoras significativas.
    - **Requisitos**:
      - Tiempo de respuesta adecuado para búsquedas y carga de resultados.
+
+#### 13. **Geolocalización de IP**
+   - **Descripción**: El sistema debe ser capaz de geolocalizar la IP del usuario, si este lo permite, para mostrarle los resultados en función de su ciudad.
+   - **Entrada**: Permiso del usuario para acceder a su ubicación.
+   - **Salida**: Resultados de búsqueda basados en la ciudad detectada por la geolocalización.
