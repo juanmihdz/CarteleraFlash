@@ -1,6 +1,10 @@
+import React, { useEffect } from 'react';
 import MainRoutes from "./routes/MainRoutes";
 
 export default function App() {
-  return <MainRoutes></MainRoutes>;
-  
+  useEffect(() => {
+    document.title = 'CarteleraFlash';
+  }, []);
+
+  return <MainRoutes />;
 }
