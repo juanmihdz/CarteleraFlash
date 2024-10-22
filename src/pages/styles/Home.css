@@ -1,0 +1,54 @@
+.card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg,rgba(247,40,40,0.5), rgba(0,0,0,0.2));
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 0.5rem;
+}
+
+.card:hover::before{
+    opacity: 1;
+}
+.card::after{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(243,25,25,0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card-description::after{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 16px;
+    word-break: break-word;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(243,25,25,0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.card:hover::after{
+    opacity: 1;
+}
+
+.card:hover .card-description::after{
+    opacity: 1;
+}
+
