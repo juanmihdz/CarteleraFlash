@@ -58,9 +58,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding: 0 36px;
     perspective: 2500px;
-    margin: 0 50px;
   }
 .cover-image{
     border-radius: 0.6rem;

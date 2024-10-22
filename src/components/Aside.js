@@ -8,7 +8,7 @@ export function Aside() {
         
         <>
         
-    <aside id="cta-button-sidebar" className="h-fit sticky top-20 md:top-32 lg:top-20 w-64 h-screen transition-transform hidden sm:block" aria-label="Sidebar">
+    <aside id="cta-button-sidebar" className="h-fit sticky top-20 md:top-32 lg:top-20 w-64 transition-transform hidden sm:block" aria-label="Sidebar">
     <div className="h-full px-3 overflow-y-auto">
         <ul className="space-y-2 font-medium">
             <li>
