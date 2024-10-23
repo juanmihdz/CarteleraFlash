@@ -1,7 +1,6 @@
 import { Aside } from "../components/Aside";
 import './styles/Home.css';
 import {HOME_IMAGES} from "../mocks/HomeImages.js";
-
 export default function Home() {
 
 
@@ -11,19 +10,32 @@ export default function Home() {
   const list = [];
   for(let movie of images){
     const img = movie.image;
-    const listDescription = movie.description.map((desc,index)=> {return <li key={index}>{desc}</li>})
+    const listCinemas = movie.cinemas?.map((cinema,index)=> {
+
+      const times = cinema.times.map((time,jndex)=>{
+        return <li className="p-1 rounded-lg bg-gray-100 dark:bg-slate-700" key={jndex}>{time}</li>
+      })
+
+      return <li className="backdrop-blur-md p-1 rounded-lg flex-grow" key={index}>
+        <span>{cinema.name}</span>
+        <ul className="w-full flex flex-wrap gap-1" >
+          {times}
+        </ul>
+      </li>
+    })
+
+   
 
     const card = <li key={list.length} 
     title={movie.title} 
-    className="card w-52 h-72 rounded-lg shadow-2xl
-    after:content-[attr(title)]
-    transition-transform ease-in-out relative" 
+    className="flex flex-wrap w-full justify-start card flex-grow items-start gap-2"
+    
     >
-      <div className="wrapper  w-52 h-72">
+      <div className="wrapper w-52 h-72">
         <img className="cover-image" src={parentRouteImage+img} alt={img}></img>
       </div>
-      <ul className="card-description">
-        {listDescription}
+      <ul className="overflow-auto">
+        {listCinemas}
       </ul>
     </li>
 
@@ -37,8 +49,6 @@ export default function Home() {
         {list}
       </ul>
     </div>
-
-    
   </>
   
 }

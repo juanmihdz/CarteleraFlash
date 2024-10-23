@@ -3,7 +3,6 @@
 
 
 export function Aside() {
-    
     return (
         
         <>

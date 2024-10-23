@@ -30,7 +30,7 @@ export default function Header() {
     <>
       <nav className='h-fit mb-10 sticky top-0 z-10'>
         <section className="flex justify-between flex-wrap items-center md:justify-start p-4 lg:gap-20 gap-4 backdrop-blur-lg">
-          <h1 className="pl-0 md:pl-8 text-4xl font-semibold">
+          <h1 className="text-4xl font-semibold">
             Cartelera Flash
           </h1>
           <button onClick={toggleClass} className="py-2 right-2 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden">
@@ -44,7 +44,7 @@ export default function Header() {
           </div>
         </section>
       </nav>
-      <section className='w-full pl-0 md:pl-8 flex-wrap items-center justify-between flex gap-4 mb-10 '>
+      <section className='w-full flex-wrap items-center justify-between flex gap-4 mb-10 '>
         <div className='flex flex-col md:w-1/2 max-w-7xl sm:w-full'>
           <div className='w-full'>
             <h2 className='text-6xl font-semibold p-4'>
