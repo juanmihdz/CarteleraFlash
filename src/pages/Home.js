@@ -28,7 +28,7 @@ export default function Home() {
 
     const card = <li key={list.length} 
     title={movie.title} 
-    className="flex flex-wrap w-full justify-start card flex-grow items-start gap-2"
+    className="flex flex-wrap w-fit justify-start card items-start gap-2"
     
     >
       <div className="wrapper w-52 h-72">
@@ -45,7 +45,7 @@ export default function Home() {
   return <>
     <div className="flex flex-wrap items-start w-full justify-around">
       <Aside></Aside>
-      <ul className=" sm:w-2/6 md:w-3/5 lg:w-3/4 xl:w-[79%] 2xl:w-4/5 flex flex-wrap justify-center items-center gap-4">
+      <ul className=" sm:w-2/6 md:w-3/5 lg:w-3/4 xl:w-[79%] 2xl:w-4/5 flex flex-wrap justify-end items-center gap-4">
         {list}
       </ul>
     </div>
